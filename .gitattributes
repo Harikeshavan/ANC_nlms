@@ -1,0 +1,4 @@
+*.v linguist-language=Verilog
+*.sv linguist-language=Verilog
+*.vh linguist-language=Verilog
+*.py linguist-detectable=false
