@@ -15,12 +15,12 @@ This project demonstrates hardware-based adaptive filtering for removing noise f
 ### Adaptive FIR Filter
 - 32-tap FIR structure (configurable)
 - LMS coefficient update:  
-  \( w_i(n+1) = w_i(n) + \mu \cdot e(n) \cdot x_i(n) \)
+  $\( w_i(n+1) = w_i(n) + \mu \cdot e(n) \cdot x_i(n) \)$
 - Real-time adaptation per clock
 
 ### Noise Cancellation Output
 - Error computation:  
-  \( e(n) = \text{desired} - \text{filter output} \)
+  $\( e(n) = \text{desired} - \text{filter output} \)$
 - Estimated noise is scaled and subtracted from the desired signal
 
 ### Parameterized Design
@@ -58,12 +58,12 @@ Writes filtered output to:
 ---
 
 ## Directory Structure
-├── on_ANC.v          # Main ANC module
-├── on_ANC_tb.v       # Testbench
-├── Mem Files/
-│   ├── noise ref/
-│   ├── noisy sig/
-│   └── out file/
+├── on_ANC.v         &emsp;  # Main ANC module <br>
+├── on_ANC_tb.v      &nbsp; # Testbench <br>
+├── Mem Files/ <br>
+&emsp;  ├── noise ref/ <br>
+&emsp;  ├── noisy sig/ <br>
+&emsp;  └── out file/ <br>
 
 ---
 
